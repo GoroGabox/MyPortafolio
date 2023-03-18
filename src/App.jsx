@@ -5,21 +5,15 @@ import { About, Contact, Hero, Navbar, Tech, Works, StarsCanvas } from "./compon
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
+      <div className='relative z-0 bg-primary swap'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
-          <div className=" relative z-0">
-            <Hero />
-            <StarsCanvas />
-          </div>
+          <Hero />
         </div>
         <About />
         <Tech />
         <Works />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Contact />
       </div>
     </BrowserRouter>
   );

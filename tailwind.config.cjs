@@ -21,6 +21,9 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.webp')",
       },
+      swap: {
+        "font-display":"swap"
+      },
     },
   },
   plugins: [],
