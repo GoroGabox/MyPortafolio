@@ -1,14 +1,14 @@
-import logo from "./logo.png";
-import backend from "./backend.png";
-import mobile from "./mobile.png";
-import creator from "./creator.png"
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.png";
-import close from "./close.png";
-import instagram from "./instagram.png";
-import twitter from "./twitter.png";
-import linkedin from "./linkedin.png";
+import logo from "./logo.webp";
+import backend from "./backend.webp";
+import mobile from "./mobile.webp";
+import creator from "./creator.webp"
+import web from "./web.webp";
+import github from "./github.webp";
+import menu from "./menu.webp";
+import close from "./close.webp";
+import instagram from "./instagram.webp";
+import twitter from "./twitter.webp";
+import linkedin from "./linkedin.webp";
 
 import docker from "./tech/docker.webp";
 import figma from "./tech/figma.webp";
@@ -22,9 +22,9 @@ import tailwind from "./tech/tailwind.webp";
 import threejs from "./tech/threejs.webp";
 
 
-import carrent from "./carrent.png";
-import jobit from "./MinecraftClone.png";
-import tripguide from "./tripguide.png";
+import carrent from "./carrent.webp";
+import jobit from "./MinecraftClone.webp";
+import tripguide from "./tripguide.webp";
 
 import cv from "./GabrielDiaz.pdf"
 
