@@ -91,17 +91,17 @@ const technologies = [
     tag:"frontend"
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
     tag:"backend"
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
     tag:"frontend"
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
     tag:"backend"
   },
@@ -131,7 +131,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/GoroGabox/Al_Volante",
   },
   {
     name: "Minecraft-Clone",
@@ -152,7 +152,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/GoroGabox/MinecraftClone",
   },
   {
     name: "Light Room",

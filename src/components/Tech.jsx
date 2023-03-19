@@ -15,8 +15,8 @@ const Tech = () => {
       As a Full Stack Developer, I have extensive experience in creating web applications from start to finish.
       My skills in both Frontend and Backend technologies enable me to create high-quality projects that meet the needs of users.
       </p>
-      <div className="flex mt-20">
-        <div className='flex flex-col w-1/2'>
+      <div className="flex flex-col mt-20 xs:flex-row">
+        <div className='flex flex-col w-full xs:w-1/2'>
           <div className={`${styles.sectionSubText} flex justify-center`}>Frontend</div>
           <hr className="w-[80%] mx-auto mt-5"/>
           <div className="flex flex-wrap justify-center gap-10 mt-10">
@@ -32,7 +32,7 @@ const Tech = () => {
             })}
           </div>
         </div>
-        <div className='flex flex-col w-1/2'>
+        <div className='flex flex-col w-full xs:w-1/2 mt-20 xs:mt-0'>
           <div className={`${styles.sectionSubText} flex justify-center`}>Backend</div>
           <hr className="w-[80%] mx-auto mt-5"/>
           <div className="flex flex-wrap justify-center gap-10 mt-10">
