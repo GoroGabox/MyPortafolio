@@ -1,4 +1,5 @@
 import logo from "./logo-36.webp";
+import sticker from "./astronauta_sticker.webp";
 import backend from "./backend.webp";
 import mobile from "./mobile.webp";
 import creator from "./creator.webp"
@@ -30,6 +31,7 @@ import cv from "./GabrielDiaz.pdf"
 
 export {
   logo,
+  sticker,
   backend,
   creator,
   mobile,

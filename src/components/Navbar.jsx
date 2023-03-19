@@ -65,7 +65,7 @@ const Navbar = () => {
             href={cv}
             download="Gabriel Diaz CV" 
             target="_blank"
-            className=" rounded-full bg-sky-500 text-white px-4 py-2 cursor-pointer hover:scale-120"
+            className=" rounded-full bg-sky-500 text-white px-4 py-2 cursor-pointer hover:scale-120 min-w-fit"
           >
             Download CV
           </a>

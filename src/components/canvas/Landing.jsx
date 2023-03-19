@@ -1,6 +1,8 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { motion } from "framer-motion";
+import { sticker } from "../../assets";
 
 import CanvasLoader from "../Loader";
 
@@ -54,10 +56,7 @@ const LandingCanvas = () => {
   }, []);
 
   return (
-    <>
-      {isMobile ? 
-        <div className="">Mobil</div>
-      :
+    
       <Canvas
       frameloop='demand'
       shadows
@@ -78,8 +77,7 @@ const LandingCanvas = () => {
       </Suspense>
 
       <Preload all />
-    </Canvas> }
-    </>
+    </Canvas>
     
   );
 };
