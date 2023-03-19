@@ -1,32 +1,12 @@
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { styles } from "../styles";
 import { LandingCanvas } from "./canvas";
 import { sticker } from "../assets";
+import AuthContext from '../context/AuthContext'
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-
-    // Remove the listener when the component is unmounted
-    return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
-  }, []);
+  let {isMobile} = useContext(AuthContext) || {}
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -62,7 +42,7 @@ const Hero = () => {
           }}
           className='w-full h-full rounded-full mb-1 flex justify-center items-center'
         >
-          <img src={sticker} alt="astronaut sticker" className="" />
+          <img src={sticker} alt="astronaut sticker" className="w-[340px] h-[340px]" />
         </motion.div>
         </div>
           :

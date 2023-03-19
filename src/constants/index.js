@@ -20,7 +20,7 @@ import {
   linkedin,
 } from "../assets";
 
-export const navLinks = [
+const navLinks = [
   {
     id: "about",
     title: "About",
@@ -58,42 +58,52 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+    tag:"frontend"
   },
   {
     name: "React JS",
     icon: reactjs,
+    tag:"frontend"
   },
   {
     name: "Python",
     icon: python,
+    tag:"backend"
   },
   {
     name: "Spark AR",
     icon: spark,
+    tag:"frontend"
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    tag:"frontend"
   },
   {
     name: "Django",
     icon: django,
+    tag:"backend"
   },
   {
     name: "Three JS",
     icon: threejs,
+    tag:"frontend"
   },
   {
     name: "git",
     icon: git,
+    tag:"backend"
   },
   {
     name: "figma",
     icon: figma,
+    tag:"frontend"
   },
   {
     name: "docker",
     icon: docker,
+    tag:"backend"
   },
 ];
 
@@ -188,4 +198,4 @@ const social = [
   },
 ]
 
-export { services, technologies, projects, social };
+export { navLinks, services, technologies, projects, social };
