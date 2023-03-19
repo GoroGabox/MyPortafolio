@@ -54,7 +54,11 @@ const LandingCanvas = () => {
   }, []);
 
   return (
-    <Canvas
+    <>
+      {isMobile ? 
+        <div className="">Mobil</div>
+      :
+      <Canvas
       frameloop='demand'
       shadows
       dpr={[1, 2]}
@@ -74,7 +78,9 @@ const LandingCanvas = () => {
       </Suspense>
 
       <Preload all />
-    </Canvas>
+    </Canvas> }
+    </>
+    
   );
 };
 

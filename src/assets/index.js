@@ -1,13 +1,13 @@
-import logo from "./logo.webp";
+import logo from "./logo-36.webp";
 import backend from "./backend.webp";
 import mobile from "./mobile.webp";
 import creator from "./creator.webp"
 import web from "./web.webp";
-import github from "./github.webp";
+import github from "./github-20.webp";
 import menu from "./menu.webp";
 import close from "./close.webp";
-import instagram from "./instagram.webp";
-import twitter from "./twitter.webp";
+import instagram from "./instagram-80.webp";
+import twitter from "./twitter-80.webp";
 import linkedin from "./linkedin.webp";
 
 import docker from "./tech/docker.webp";
@@ -22,9 +22,9 @@ import tailwind from "./tech/tailwind.webp";
 import threejs from "./tech/threejs.webp";
 
 
-import carrent from "./carrent.webp";
-import jobit from "./MinecraftClone.webp";
-import tripguide from "./tripguide.webp";
+import carrent from "./carrent-230.webp";
+import jobit from "./MinecraftClone-230.webp";
+import tripguide from "./tripguide-230.webp";
 
 import cv from "./GabrielDiaz.pdf"
 

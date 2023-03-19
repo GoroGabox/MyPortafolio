@@ -21,7 +21,6 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
         {social.map((item)=>(
           <a href={item.link} target='_blank' className="flex w-full  mt-10 cursor-pointer" key={item.title}>
-            //srcSet
             <img src={item.icon} alt="" className="w-20 h-20" srcSet=""/>
             <div className="flex flex-col mx-4 justify-center">
               <div className="">{item.title}</div>
