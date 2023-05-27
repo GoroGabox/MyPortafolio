@@ -15,7 +15,7 @@ function LanguageSwitcher() {
         <div className="flex justify-center">
           <img src={content.flag} alt="flag" />
         </div>
-        <div className="">EN | ES</div>
+        <div className="">EN|ES</div>
       </div>
     </div>
   );

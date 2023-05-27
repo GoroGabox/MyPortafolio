@@ -65,7 +65,7 @@ import {
   const navLinks = [
     {
       id: "about",
-      title: "Acerca de mí",
+      title: "Info",
     },
     {
       id: "tech",
