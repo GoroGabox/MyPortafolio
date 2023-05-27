@@ -1,14 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { LanguageContext } from '../context/LangContext';
+import * as contentEn from '../constants/content_en';
+import * as contentEs from '../constants/content_es';
 import { logo, menu, close, cv } from "../assets";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const { language } = useContext(LanguageContext);
+  const content = language === 'en' ? contentEn : contentEs;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,8 +55,10 @@ const Navbar = () => {
           </p>
         </Link>
 
+        <LanguageSwitcher/>
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
+          {content.navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
@@ -85,7 +93,8 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
+              <LanguageSwitcher/>
+              {content.navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${

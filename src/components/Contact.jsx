@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { social } from "../constants";
+import { LanguageContext } from '../context/LangContext';
+import * as contentEn from '../constants/content_en';
+import * as contentEs from '../constants/content_es';
 
 const Contact = () => {
+
+  const { language } = useContext(LanguageContext);
+  const content = language === 'en' ? contentEn : contentEs;
 
   return (
     <div
@@ -17,9 +22,9 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-        {social.map((item)=>(
+        <p className={styles.sectionSubText}>{content.contactInfo.title}</p>
+        <h3 className={styles.sectionHeadText}>{content.contactInfo.subTitle}</h3>
+        {content.social.map((item)=>(
           <a href={item.link} target='_blank' className="flex w-full  mt-10 cursor-pointer" key={item.title}>
             <img src={item.icon} alt="" className="w-20 h-20" srcSet=""/>
             <div className="flex flex-col mx-4 justify-center">

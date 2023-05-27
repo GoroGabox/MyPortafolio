@@ -3,10 +3,17 @@ import React, { useContext } from "react";
 import { styles } from "../styles";
 import { LandingCanvas } from "./canvas";
 import { sticker } from "../assets";
+
 import AuthContext from '../context/AuthContext'
+import { LanguageContext } from '../context/LangContext';
+
+import * as contentEn from '../constants/content_en';
+import * as contentEs from '../constants/content_es';
 
 const Hero = () => {
   let {isMobile} = useContext(AuthContext) || {}
+  const { language } = useContext(LanguageContext);
+  const content = language === 'en' ? contentEn : contentEs;
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -20,11 +27,11 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Gabriel</span>
+            {content.heroInfo.title}<span className='text-[#915EFF]'>Gabriel</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+          {content.heroInfo.textUp}<br className='sm:block hidden' />
+          {content.heroInfo.textDown}
           </p>
         </div>
       </div>

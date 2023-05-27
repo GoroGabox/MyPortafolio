@@ -18,7 +18,49 @@ import {
   instagram,
   twitter,
   linkedin,
+  usa,
 } from "../assets";
+
+const flag = usa;
+
+const aboutInfo = 
+  {
+    title:"Introduction",
+    subTitle:"Overview.",
+    text:"I'm a skilled software developer with experience in Python and JavaScript, and expertise in frameworks like React, Three.js, and Django. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!",
+  }
+;
+
+const heroInfo = 
+  {
+    title:"Hi, I'm ",
+    textUp:"I develop 3D visuals, user ",
+    textDown:"interfaces and web applications",
+  }
+;
+
+const techInfo = 
+  {
+    title:"My Skills",
+    subTitle:"Technologies.",
+    text:"As a Full Stack Developer, I have extensive experience in creating web applications from start to finish. My skills in both Frontend and Backend technologies enable me to create high-quality projects that meet the needs of users.",
+  }
+;
+
+const proyectsInfo = 
+  {
+    title:"My work",
+    subTitle:"Projects.",
+    text:"Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+  }
+;
+
+const contactInfo = 
+  {
+    title:"Get in touch",
+    subTitle:"Contact.",
+  }
+;
 
 const navLinks = [
   {
@@ -198,4 +240,4 @@ const social = [
   },
 ]
 
-export { navLinks, services, technologies, projects, social };
+export { aboutInfo, heroInfo, techInfo, proyectsInfo, contactInfo ,flag, navLinks, services, technologies, projects, social };

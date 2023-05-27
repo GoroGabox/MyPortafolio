@@ -18,7 +18,49 @@ import {
     instagram,
     twitter,
     linkedin,
+    chile,
   } from "../assets";
+
+  const flag = chile;
+
+  const aboutInfo = 
+    {
+      title: "Introducción",
+      subTitle: "Descripción general.",
+      text: "Soy un desarrollador de software con experiencia en Python y JavaScript, y especializado en frameworks como React, Three.js y Django. Soy un aprendiz rápido y colaboro estrechamente con los clientes para crear soluciones eficientes, escalables y amigables para el usuario que resuelvan problemas del mundo real. ¡Trabajemos juntos para dar vida a tus ideas!",
+    }
+  ;
+  
+  const heroInfo = 
+    {
+      title: "Hola, soy ",
+      textUp: "Desarrollo vistas 3D, ",
+      textDown: "interfaces de usuario y aplicaciones web",
+    }
+  ;
+  
+  const techInfo = 
+    {
+      title: "Mis habilidades",
+      subTitle: "Tecnologías.",
+      text: "Como desarrollador Full Stack, tengo una amplia experiencia en la creación de aplicaciones web de principio a fin. Mis habilidades en tecnologías tanto de Frontend como de Backend me permiten crear proyectos de alta calidad que satisfacen las necesidades de los usuarios.",
+    }
+  ;
+  
+  const proyectsInfo = 
+    {
+      title: "Mi trabajo",
+      subTitle: "Proyectos.",
+      text: "Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos del mundo real de mi trabajo. Cada proyecto se describe brevemente con enlaces a los repositorios de código y demos en vivo. Reflejan mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera efectiva.",
+    }
+  ;
+  
+  const contactInfo = 
+    {
+      title: "Trabajemos juntos!",
+      subTitle: "Contacto.",
+    }
+  ;
   
   const navLinks = [
     {
@@ -198,4 +240,4 @@ import {
       },
     ];
     
-    export { navLinks, services, technologies, projects, social };
+    export { aboutInfo, heroInfo, techInfo, proyectsInfo, contactInfo ,flag , navLinks, services, technologies, projects, social };

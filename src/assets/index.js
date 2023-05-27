@@ -27,6 +27,9 @@ import carrent from "./carrent-230.webp";
 import jobit from "./MinecraftClone-230.webp";
 import tripguide from "./tripguide-230.webp";
 
+import chile from "./chile.webp";
+import usa from "./usa.webp";
+
 import cv from "./GabrielDiaz.pdf"
 
 export {
@@ -55,5 +58,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  chile,
+  usa,
   cv,
 };
