@@ -5,7 +5,7 @@ const LanguageContext = createContext();
 
 // Creamos un proveedor de idioma que envuelve a los componentes
 function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('es');
 
   const toggleLanguage = () => {
     const newLanguage = language === 'en' ? 'es' : 'en';
