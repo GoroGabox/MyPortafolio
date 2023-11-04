@@ -19,6 +19,7 @@ import {
   twitter,
   linkedin,
   usa,
+  java, jira, php, linux, cpp, flutter
 } from "../assets";
 
 const flag = usa;
@@ -147,13 +148,43 @@ const technologies = [
     icon: docker,
     tag:"backend"
   },
+  {
+    name: "Java",
+    icon: java,
+    tag:"backend"
+  },
+  {
+    name: "Jira",
+    icon: jira,
+    tag:"backend"
+  },
+  {
+    name: "Linux",
+    icon: linux,
+    tag:"backend"
+  },
+  {
+    name: "C++",
+    icon: cpp,
+    tag:"backend"
+  },
+  {
+    name: "PHP",
+    icon: php,
+    tag:"frontend"
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
+    tag:"frontend"
+  },
 ];
 
 const projects = [
   {
     name: "Drive School 'Al Volante'",
     description:
-      "Web app that allows users to register and pay for driving lesson plans.",
+      "Dinamic website for a drive-school.",
     tags: [
       {
         name: "react",
@@ -197,9 +228,9 @@ const projects = [
     source_code_link: "https://github.com/GoroGabox/MinecraftClone",
   },
   {
-    name: "Light Room",
+    name: "Home Calculator",
     description:
-      "A comprehensive showroom where users can interact with the lights and their intensity to create unique environments.",
+      "Web application to draw plans, calculate the necessary construction materials and quote their respective values.",
     tags: [
       {
         name: "react",
@@ -215,7 +246,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/GoroGabox/HomeApp",
   },
 ];
 

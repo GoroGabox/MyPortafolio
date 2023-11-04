@@ -19,6 +19,7 @@ import {
     twitter,
     linkedin,
     chile,
+    java, jira, php, linux, cpp, flutter
   } from "../assets";
 
   const flag = chile;
@@ -147,13 +148,43 @@ import {
       icon: docker,
       tag: "backend",
     },
+    {
+      name: "Java",
+      icon: java,
+      tag:"backend"
+    },
+    {
+      name: "Jira",
+      icon: jira,
+      tag:"backend"
+    },
+    {
+      name: "Linux",
+      icon: linux,
+      tag:"backend"
+    },
+    {
+      name: "C++",
+      icon: cpp,
+      tag:"backend"
+    },
+    {
+      name: "PHP",
+      icon: php,
+      tag:"frontend"
+    },
+    {
+      name: "Flutter",
+      icon: flutter,
+      tag:"frontend"
+    },
   ];
   
   const projects = [
     {
       name: "Autoescuela 'Al Volante'",
       description:
-        "Aplicación web que permite a los usuarios registrarse y pagar por planes de clases de conducir.",
+        "Sitio web dinamico para una escuela de conductores.",
       tags: [
         {
           name: "react",
@@ -197,9 +228,9 @@ import {
       source_code_link: "https://github.com/GoroGabox/MinecraftClone",
     },
     {
-        name: "Light Room",
+        name: "Home Calculator",
         description:
-          "Un salón de exposición completo donde los usuarios pueden interactuar con las luces y su intensidad para crear ambientes únicos.",
+          "Aplicacion web para dibujar planos, calcular los materiales de construccion necesarios y cotizar sus respectivos valores.",
         tags: [
           {
             name: "react",
@@ -215,11 +246,11 @@ import {
           },
         ],
         image: tripguide,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/GoroGabox/HomeApp",
       },
     ];
     
-    const social = [
+  const social = [
       {
         title: 'Instagram',
         name: '@gg.gabo',

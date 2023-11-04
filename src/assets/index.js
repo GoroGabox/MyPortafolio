@@ -21,16 +21,22 @@ import reactjs from "./tech/reactjs.webp";
 import spark from "./tech/spark.webp";
 import tailwind from "./tech/tailwind.webp";
 import threejs from "./tech/threejs.webp";
+import java from "./tech/java.webp"
+import linux from "./tech/linux.webp"
+import php from "./tech/php.webp"
+import jira from "./tech/jira.webp"
+import flutter from "./tech/flutter.webp"
+import cpp from "./tech/c.webp"
 
 
-import carrent from "./carrent-230.webp";
+import carrent from "./AV.png";
 import jobit from "./MinecraftClone-230.webp";
-import tripguide from "./tripguide-230.webp";
+import tripguide from "./HC.png";
 
 import chile from "./chile.webp";
 import usa from "./usa.webp";
 
-import cv from "./GabrielDiaz.pdf"
+import cv from "./CV.pdf"
 
 export {
   logo,
@@ -61,4 +67,5 @@ export {
   chile,
   usa,
   cv,
+  java, jira, php, linux, cpp, flutter
 };

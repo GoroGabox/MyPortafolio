@@ -24,7 +24,7 @@ const Landing = ({ isMobile }) => {
       <primitive
         object={landing.scene}
         scale={isMobile ? 1.2 : 1.5}
-        position={isMobile ? [0, 0, 0] : [5, -1, 0]}
+        position={isMobile ? [0, 0, 0] : [0, -1, 0]}
       />
     </mesh>
   );
@@ -45,9 +45,11 @@ const LandingCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
-          autoRotateSpeed={8}
+          autoRotateSpeed={3}
           enableZoom={false}
           enablePan={false}
+          enableDamping={false}
+          enableRotate={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
