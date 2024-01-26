@@ -171,7 +171,7 @@ import {
     {
       name: "PHP",
       icon: php,
-      tag:"frontend"
+      tag:"backend"
     },
     {
       name: "Flutter",
