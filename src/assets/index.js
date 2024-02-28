@@ -36,7 +36,8 @@ import tripguide from "./HC.png";
 import chile from "./chile.webp";
 import usa from "./usa.webp";
 
-import cv from "./CV.pdf"
+import cv_en from "./CV_en.pdf"
+import cv_es from "./CV_es.pdf"
 
 export {
   logo,
@@ -66,6 +67,7 @@ export {
   tripguide,
   chile,
   usa,
-  cv,
+  cv_en,
+  cv_es,
   java, jira, php, linux, cpp, flutter
 };

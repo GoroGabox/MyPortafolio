@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { LanguageContext } from '../context/LangContext';
 import * as contentEn from '../constants/content_en';
 import * as contentEs from '../constants/content_es';
-import { logo, menu, close, cv } from "../assets";
+import { logo, menu, close, cv_en, cv_es } from "../assets";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
@@ -15,6 +15,8 @@ const Navbar = () => {
 
   const { language } = useContext(LanguageContext);
   const content = language === 'en' ? contentEn : contentEs;
+  const cv = language === 'en' ? cv_en : cv_es;
+  const descargaTexto = language === 'en' ? 'Download Resume' : 'Descargar CV';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,7 +78,7 @@ const Navbar = () => {
             target="_blank"
             className=" rounded-full bg-sky-500 text-white px-4 py-2 cursor-pointer hover:scale-120 min-w-fit"
           >
-            Download CV
+            {descargaTexto}
           </a>
         </ul>
 
@@ -115,7 +117,7 @@ const Navbar = () => {
                 target="_blank"
                 className=" rounded-full bg-sky-500 text-white px-4 py-2 cursor-pointer"
               >
-                Download CV
+                {descargaTexto}
               </a>
             </ul>
           </div>
