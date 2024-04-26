@@ -35,8 +35,8 @@ import {
   const heroInfo = 
     {
       title: "Hola, soy ",
-      textUp: "Desarrollo vistas 3D, ",
-      textDown: "interfaces de usuario y aplicaciones web",
+      textUp: "Desarrollo modernas aplicaciones web, ",
+      textDown: "que tu empresa necesita.",
     }
   ;
   

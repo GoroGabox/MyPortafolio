@@ -35,8 +35,8 @@ const aboutInfo =
 const heroInfo = 
   {
     title:"Hi, I'm ",
-    textUp:"I develop 3D visuals, user ",
-    textDown:"interfaces and web applications",
+    textUp:"I develop modern web applications",
+    textDown:"that your company needs.",
   }
 ;
 
