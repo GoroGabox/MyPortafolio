@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-
+import React, { useContext, useState } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { LanguageContext } from '../context/LangContext';
@@ -7,55 +6,67 @@ import * as contentEn from '../constants/content_en';
 import * as contentEs from '../constants/content_es';
 
 const Tech = () => {
-
   const { language } = useContext(LanguageContext);
   const content = language === 'en' ? contentEn : contentEs;
+  
+  const [selectedSection, setSelectedSection] = useState("frontend");
 
   return (
-    <>
-      <div>
-        <p className={`${styles.sectionSubText}`}>{content.techInfo.title}</p>
-        <h1 className={`${styles.sectionHeadText}`}>{content.techInfo.subTitle}</h1>
-      </div>
+    <div className="">
+      <p className={`${styles.sectionSubText}`}>{content.techInfo.title}</p>
+      <h1 className={`${styles.sectionHeadText}`}>{content.techInfo.subTitle}</h1>
+          
       <p className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-      {content.techInfo.text}
+        {content.techInfo.text}
       </p>
-      <div className="flex flex-col mt-20 xs:flex-row">
-        <div className='flex flex-col w-full xs:w-1/2'>
-          <div className={`${styles.sectionSubText} flex justify-center`}>Frontend</div>
-          <hr className="w-[80%] mx-auto mt-5"/>
-          <div className="flex flex-wrap justify-center mx-auto gap-10 mt-10 max-w-[500px]">
-            {content.technologies.map((technology) => {
-              if (technology.tag==="frontend") {
-                return (
-                <div className='w-28 h-28 flex-row' key={technology.name}>
-                  <img src={technology.icon} className='w-full h-full'/>
-                  <div className='flex justify-center'>{technology.name}</div>
-                </div>
-                )
-              }
-            })}
-          </div>
+      
+      <hr className="w-full mx-auto my-5" />
+      <div className="block md:flex">
+        {/* Sidebar de navegación */}
+        <div className="md:w-1/4 w-full bg-gray-800 text-white h-auto min-h-[300px] p-6 rounded-lg shadow-lg flex md:block flex-wrap">
+          <button 
+            className={`w-full py-2 text-left px-4 rounded-lg transition-all ${selectedSection === "frontend" ? "bg-blue-500" : "hover:bg-gray-700"}`} 
+            onClick={() => setSelectedSection("frontend")}
+          >
+            Frontend
+          </button>
+          <button 
+            className={`w-full py-2 text-left px-4 mt-2 rounded-lg transition-all ${selectedSection === "backend" ? "bg-blue-500" : "hover:bg-gray-700"}`} 
+            onClick={() => setSelectedSection("backend")}
+          >
+            Backend
+          </button>
+          <button 
+            className={`w-full py-2 text-left px-4 mt-2 rounded-lg transition-all ${selectedSection === "ai" ? "bg-blue-500" : "hover:bg-gray-700"}`} 
+            onClick={() => setSelectedSection("ai")}
+          >
+            Automatization / AI
+          </button>
+          <button 
+            className={`w-full py-2 text-left px-4 mt-2 rounded-lg transition-all ${selectedSection === "other" ? "bg-blue-500" : "hover:bg-gray-700"}`} 
+            onClick={() => setSelectedSection("other")}
+          >
+            Other tools
+          </button>
         </div>
-        <div className='flex flex-col w-full xs:w-1/2 mt-20 xs:mt-0'>
-          <div className={`${styles.sectionSubText} flex justify-center`}>Backend</div>
-          <hr className="w-[80%] mx-auto mt-5"/>
-          <div className="flex flex-wrap justify-center mx-auto gap-10 mt-10 max-w-[500px]">
-            {content.technologies.map((technology) => {
-              if (technology.tag==="backend") {
-                return (
-                <div className='w-28 h-28 flex-row' key={technology.name}>
+
+        {/* Contenido dinámico */}
+        <div className="w-3/4 p-8 mt-10 md:mt-0">
+          {/* Renderizado dinámico basado en la sección seleccionada */}
+          <div className="flex flex-wrap justify-center mx-auto gap-10 max-w-[600px]">
+            {content.technologies
+              .filter((tech) => tech.tag === selectedSection)
+              .map((technology) => (
+                <div className='w-28 h-28 flex flex-col items-center justify-end' key={technology.name}>
                   <img src={technology.icon} className='w-full h-full'/>
-                  <div className='flex justify-center'>{technology.name}</div>
+                  <div className='text-center mt-2 text-white'>{technology.name}</div>
                 </div>
-                )
-              }
-            })}
+              ))}
           </div>
         </div>
       </div>
-    </>
-    
+
+    </div>
   );
 };
 

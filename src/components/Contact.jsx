@@ -27,7 +27,7 @@ const Contact = () => {
         {content.social.map((item)=>(
           <a href={item.link} target='_blank' className="flex w-full  mt-10 cursor-pointer" key={item.title}>
             <img src={item.icon} alt="" className="w-20 h-20" srcSet=""/>
-            <div className="flex flex-col mx-4 justify-center">
+            <div className="flex flex-col mx-4 justify-center items-center">
               <div className="">{item.title}</div>
               <div className="text-secondary text-[17px] max-w-3xl leading-[30px]">{item.name}</div>
             </div>
