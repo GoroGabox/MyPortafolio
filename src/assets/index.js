@@ -42,7 +42,7 @@ import postgreSQL from "./tech/postgreSQL.png"
 import scapy from "./tech/scapy.png"
 import selenium from "./tech/selenium.png"
 import spring from "./tech/spring.png"
-import tensorflow from "./tech/tensorflow.png"
+import tensorflow from "./tech/tensorFlow.png"
 import wireshark from "./tech/wireshark.png"
 import ts from "./tech/ts.png"
 
