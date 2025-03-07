@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-auto mx-auto overflow-hidden">
-      <MatrixBackground />
+      <MatrixBackground speed = {35}/>
       <div className="grid grid-cols-1 md:grid-cols-2 relative z-10">
         <div className="max-w-7xl mx-auto md:px-24 px-3 flex flex-row items-center gap-5 md:py-36 pt-36">
           <div className='flex flex-col justify-center items-center mt-5'>
@@ -39,24 +39,6 @@ const Hero = () => {
           <Terminal />
         </div>
       </div>
-
-      {/* <div className='w-full flex justify-center items-center z-0'>
-        <a href='#about' aria-label="Go to About me">
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-white mb-1'
-            />
-          </div>
-        </a>
-      </div> */}
     </section>
   );
 };
@@ -128,14 +110,14 @@ function Terminal() {
               setInput("");
             }
           }}
-          placeholder="Escribe un comando o help para ver ayuda."
+          placeholder="Type a command or help to see all commands."
         />
       </div>
     </div>
   );
 }
 
-const MatrixBackground = () => {
+const MatrixBackground = ({ speed = 50 }) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -167,7 +149,7 @@ const MatrixBackground = () => {
         }
         drops[i]++;
       }
-      requestAnimationFrame(drawMatrix);
+      setTimeout(() => requestAnimationFrame(drawMatrix), speed);
     };
 
     drawMatrix();
